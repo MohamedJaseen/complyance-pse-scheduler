@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 
 
-SCHEDULER = Path(__file__).with_name("scheduler.py")
+SCHEDULER = Path(__file__).resolve().parents[1] / "scheduler.py"
 HEADER = "task_id,duration,priority,dependencies\n"
 
 

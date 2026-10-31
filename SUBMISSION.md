@@ -11,12 +11,12 @@ or credentials.
 - Dependency installation command: `python -m pip install pytest` (scheduler runtime uses only the standard library).
 - Exact scheduler command: `python scheduler.py --input inputs\basic.csv --workers 2`
 - Exact test command: `pytest -q`
-- Actual test results: `51 passed, 5 subtests passed in 10.38s` (Python 3.12.10, pytest 9.1.1).
+- Actual test results: `51 passed, 5 subtests passed in 11.89s` (Python 3.12.10, pytest 9.1.1).
 - Data structures and approximate time/space complexity: Task-ID lookup and reverse dependency adjacency lists; iterative DFS for cycle detection; heaps for ready tasks, running completions, and idle workers. Validation and cycle detection are O(V + E); scheduling is O((V + E) log V) worst case; space is O(V + E + W), where V is task count, E is dependency count, and W is worker count.
 
 ## Scope and assistance
 
-- Known limitations or unfinished work: None known against the published Assignment 1 specification. The scheduler implements the required priority policy and does not search for a globally optimal schedule.
+- Known limitations or unfinished work: The program reads and retains the task graph in memory, with the input capped at the specified 2,000 tasks. It reports the first encountered validation error rather than aggregating multiple errors, as allowed by the specification. It implements the required priority policy, not a globally optimal scheduler. Verification was run on Windows with Python 3.12.10; other operating systems and Python versions were not tested.
 - Documentation or libraries used: The assignment brief and specification; Python standard-library `csv`, `heapq`, `json`, `re`, `dataclasses`, and `unittest`; pytest for the pytest suite.
 - AI assistance used: Claude and the Copilot AI assistant in VS Code helped with scheduler design, implementation, tests, and documentation. I reviewed the changes, ran the test suite, checked all seven supplied inputs against expected JSON values, and compared 500 generated acyclic graphs against an independent simulator. The scheduler itself does not call an AI service and requires no API key or external runtime service.
 

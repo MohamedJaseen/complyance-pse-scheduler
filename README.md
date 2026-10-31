@@ -50,7 +50,7 @@ Latest result:
 
 ```text
 ...................................................                 [100%]
-51 passed, 5 subtests passed in 10.38s
+51 passed, 5 subtests passed in 11.89s
 ```
 
 Tests invoke the command-line program with subprocesses and also test its core
@@ -78,10 +78,12 @@ worst case. The task graph, heaps, and output use O(V + E + W) space.
 
 ## Limitations and assistance
 
-There are no known unfinished requirements against the published Assignment 1
-specification. This implementation intentionally follows the specified
-priority-based scheduling policy; it does not search for a globally optimal
-schedule.
+The program keeps the task graph in memory and enforces the specification's
+2,000-task limit. It reports the first encountered validation error rather
+than aggregating multiple errors, as allowed by the specification. It follows
+the required priority policy rather than searching for a globally optimal
+schedule. Verification was run on Windows with Python 3.12.10; other operating
+systems and Python versions were not tested.
 
 Claude and the Copilot AI assistant in VS Code helped with the scheduler
 design, implementation, tests, and documentation. I reviewed the changes, ran
