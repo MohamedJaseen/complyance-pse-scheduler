@@ -26,7 +26,7 @@ or credentials.
 - [x] Standard output is one JSON document; errors exit nonzero without a partial schedule.
 - [x] The program runs locally without AI/LLM services, API keys or paid accounts.
 - [x] No credentials, customer data, dependency folders or build output are included.
-- [ ] The repository is public and final work is on the default branch.
+- [x] The repository is public and final work is on the default branch.
 - [ ] I will leave submitted work unchanged; no corrections or resubmissions are accepted.
 
 You have two days from receiving the assignment; the recruiter email supplies
