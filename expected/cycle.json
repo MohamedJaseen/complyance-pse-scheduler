@@ -1,0 +1,15 @@
+{
+  "status": "error",
+  "errors": [
+    {
+      "code": "CYCLE_DETECTED",
+      "message": "Dependency cycle A -> B -> C -> A",
+      "cycle": [
+        "A",
+        "B",
+        "C",
+        "A"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+task_id,duration,priority,dependencies
+A,2,2,
+B,2,1,
+C,1,2,A
+D,1,1,B
+E,1,0,"A,B"
+F,2,3,

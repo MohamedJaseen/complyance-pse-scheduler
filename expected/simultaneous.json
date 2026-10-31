@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "workers": 2,
+  "makespan": 5,
+  "schedule": [
+    {
+      "task_id": "B",
+      "worker_id": 1,
+      "start": 0,
+      "end": 2
+    },
+    {
+      "task_id": "A",
+      "worker_id": 2,
+      "start": 0,
+      "end": 2
+    },
+    {
+      "task_id": "E",
+      "worker_id": 1,
+      "start": 2,
+      "end": 3
+    },
+    {
+      "task_id": "D",
+      "worker_id": 2,
+      "start": 2,
+      "end": 3
+    },
+    {
+      "task_id": "C",
+      "worker_id": 1,
+      "start": 3,
+      "end": 4
+    },
+    {
+      "task_id": "F",
+      "worker_id": 2,
+      "start": 3,
+      "end": 5
+    }
+  ]
+}

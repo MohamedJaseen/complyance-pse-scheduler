@@ -1,0 +1,9 @@
+{
+  "status": "error",
+  "errors": [
+    {
+      "code": "DUPLICATE_TASK",
+      "message": "Task ID A occurs more than once"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": "ok",
+  "workers": 2,
+  "makespan": 6,
+  "schedule": [
+    {
+      "task_id": "C",
+      "worker_id": 1,
+      "start": 0,
+      "end": 4
+    },
+    {
+      "task_id": "A",
+      "worker_id": 2,
+      "start": 0,
+      "end": 3
+    },
+    {
+      "task_id": "B",
+      "worker_id": 2,
+      "start": 3,
+      "end": 5
+    },
+    {
+      "task_id": "D",
+      "worker_id": 1,
+      "start": 5,
+      "end": 6
+    }
+  ]
+}

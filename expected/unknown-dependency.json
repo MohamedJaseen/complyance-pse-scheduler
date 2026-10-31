@@ -1,0 +1,9 @@
+{
+  "status": "error",
+  "errors": [
+    {
+      "code": "INVALID_DEPENDENCY",
+      "message": "Task A depends on unknown task MISSING"
+    }
+  ]
+}
